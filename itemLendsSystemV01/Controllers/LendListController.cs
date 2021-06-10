@@ -46,7 +46,7 @@ namespace itemLendsSystemV01.Controllers
         // 詳細については、https://go.microsoft.com/fwlink/?LinkId=317598 をご覧ください。
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ItemID,ItemName,BorowerName,CheckoutDate,ReturnDateExpected,ReturnDateActual")] t_lend_items t_lend_items)
+        public ActionResult Create([Bind(Include = "ItemID,ItemName")] t_lend_items t_lend_items)
         {
             if (ModelState.IsValid)
             {
